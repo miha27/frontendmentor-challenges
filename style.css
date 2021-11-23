@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img{
+    float: left;
+    width: 50px;
+    padding: 0px;
+    margin: 0;
+}
+
+h1{
+    font-family:'Big Shoulders Display', cursive ;
+    font-weight: 700;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+#card1{
+    background-repeat: no-repeat;
+    background-color:hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+    max-width: 150px;
+    border-radius: 9px 0px 0px 9px;
+    padding: 20px;
+}
+
+#card2{
+    background-repeat: no-repeat;
+    background-color:hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+    max-width: 150px;
+    padding: 20px;
+}
+
+#card3{
+    background-repeat: no-repeat;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: auto;
+    max-width: 150px;
+    border-radius: 0px 9px 9px 0px;
+    padding: 20px;
+}
+
+.cards a{
+    border-style: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 120px;
+    margin-top: 90px;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    display: inline-block;
+    padding-top: 9px;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+a:hover{
+    color: hsl(0, 0%, 95%);
+    border-color:hsl(0, 0%, 95%);
+    border-width: 1px;
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+#learn-more-sedan{
+    color:hsl(31, 77%, 52%);
+}
+
+#learn-more-sedan:hover{
+    background-color:hsl(31, 77%, 52%) ;
+    color:hsl(0, 0%, 95%);
+    border-width: 2px;
+    border: 1px solid hsl(0, 0%, 95%) ;
+}
+
+#learn-more-suv{
+    color:hsl(184, 100%, 22%);
+}
+
+#learn-more-suv:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%) ;
+    border-width: 2px;
+    border: 1px solid hsl(0, 0%, 95%) ;
+}
+
+#learn-more-luxury{
+    color:hsl(179, 100%, 13%);
+}
+
+#learn-more-luxury:hover{
+    background-color:hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border-width: 2px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.attribution a{
+    color:hsl(31, 77%, 52%);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.attribution a:hover{
+    color:teal;
+}
+
+@media  (max-width:500px) {
+    .cards{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #card1{
+        border-radius: 9px 9px 0px 0px;
+    }
+
+    #card3{
+        border-radius: 0px 0px 9px 9px;
+    }
+}
