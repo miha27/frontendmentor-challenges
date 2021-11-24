@@ -1,11 +1,12 @@
 body {
     font-family: 'Red Hat Display', sans-serif; 
     background-image: url(images/pattern-background-desktop.svg);
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 98%);
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,24 +56,30 @@ h1{
   padding: 15px 20px;
 }
 
-.inner-contents > li{
-   position: relative;
+#content{
+    text-align: start;
+    align-items: center;
+    justify-content: center;
 }
 
-li{
-    list-style: none;
-    margin-right: auto;
+#annual-plan{
+    margin: 0;
+    margin-top: 16px;
+    padding: 0;
+}
+
+#cost{
+    padding: 0;
+    margin: 0;
+}
+
+#plan{
+    display: flex;
+    align-items: center;
 }
 
 #change-plan{
-    /* justify-content: center;
-    text-align: right;*/
-    display: block;
-    position: relative; 
-    height: 10px;
-    max-width: 40;
-    margin-top: -59px;
-    margin-right: 20px; 
+    margin: -10px;
     color: hsl(245, 75%, 52%);
 }
 

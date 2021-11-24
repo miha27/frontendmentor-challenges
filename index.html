@@ -20,14 +20,18 @@
             <p id="description">You can now listen to millions of songs, <br> audiobooks, and podcasts on any 
         device <br> anywhere you like!</p>
               <div class="contents">
-                <img id="music-icon" src="images/icon-music.svg"/>
-                  <div class=inner-contents>
-                    <ul>
-                      <li><p class="text-start"><strong>Annual Plan</strong></p></li>
-                      <li><p style="color:hsl(224, 23%, 55%)" class="text-start">$59.99/year</p></li>
-                    </ul>
+                <div class="row">
+                  <div class="col-3">
+                    <img id="music-icon" src="images/icon-music.svg"/>
                   </div>
-                <a id="change-plan" href="" class="text-end"><strong>Change</strong></a>
+                  <div class="col-6" id="content">
+                    <p id="annual-plan"><strong>Annual Plan</strong></p>
+                    <p style="color:hsl(224, 23%, 55%)" id="cost">$59.99/year</p>
+                  </div>
+                  <div class="col-3 text-center" id="plan">
+                    <a id="change-plan" href=""><strong>Change</strong></a>
+                  </div>
+                </div>
               </div>
                  <div class="d-grid col mx-auto mt-2">
                   <button type="button" class="btn btn-primary mt-3">Proceed to Payment</button>
@@ -37,8 +41,6 @@
         </div>
       </div>
     </div>
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/miha27">Badea Mihaela</a>.
