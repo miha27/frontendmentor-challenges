@@ -1,36 +1,41 @@
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif; 
     background-image: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 98%);
-    display:flex;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
 } 
 
-main{
+.container{
     background-color: white;
     color: hsl(223, 47%, 23%);
     max-width: 350px;
     height: auto;
-    margin: 0 auto;
-    border-radius:25px 25px 25px 25px;
-    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 10px 10px rgba(45, 48, 214, 0.2);
 }
 
 #hero-illustration{
-    width:100%;
-    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
     border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
 }
 
 .main-content{
-    padding: 8px;
     display: flex-box;
+}
+
+h1{
+    font-weight: 900;
+    font-size: x-large;
 }
 
 #description{
@@ -38,70 +43,75 @@ main{
     font-size: 16px;
 }
 
-#container{
+.contents{
     background-color: hsl(225, 100%, 98%);
-    border-radius:15px 15px 15px 15px;
-    max-width:300px;
-    min-height:80px;
-    margin: 0 auto;
-} 
+    border-radius: 15px 15px 15px 15px;
+    max-width: 320px;
+    min-height: 80px;
+}
 
 #music-icon{
   float: left;
   padding: 15px 20px;
+}
 
+.inner-contents > li{
+   position: relative;
+}
+
+li{
+    list-style: none;
+    margin-right: auto;
 }
 
 #change-plan{
-    justify-content: center;
-    text-align: right;
+    /* justify-content: center;
+    text-align: right;*/
     display: block;
-    height:10px;
-    max-width:40;
-    margin-top:-59px;
-    margin-right:20px;
-    color:hsl(245, 75%, 52%);
+    position: relative; 
+    height: 10px;
+    max-width: 40;
+    margin-top: -59px;
+    margin-right: 20px; 
+    color: hsl(245, 75%, 52%);
 }
 
 #change-plan:hover{
-    color:hsl(256, 83%, 66%);
+    color: hsl(256, 83%, 66%);
     text-decoration: none;
-}
-
-button{
-    padding:15px;
-    text-align: center;
-    text-decoration:none!important;
-    cursor:pointer;
-    max-width:300px;
-    margin-top:20px;
-    background-color:hsl(245, 75%, 52%);
-    color:white;
-    border-radius:10px;
-    border:none;
-}
-
-
-button:hover{
-    background-color:hsl(256, 83%, 66%);
-    text-decoration: none!important;
-    cursor:pointer;
-    color:white;  
 }
 
 #change-plan a{
     text-decoration: none!important;
-    cursor:pointer;
-    color:rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 
 #cancel-order{
-    color:hsl(224, 23%, 55%);
-    display:block;
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
 }
 
 #cancel-order:hover{
-    color:hsl(223, 47%, 23%);
+    color: hsl(223, 47%, 23%);
+}
+
+.btn-primary{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 10px rgba(45, 48, 214, 0.2);
+}
+
+.btn-primary:hover{
+    background-color: hsl(256, 83%, 66%);
+    text-decoration: none;
+    cursor: pointer;
+    color: white;  
 }
 
 .attribution{
@@ -109,6 +119,7 @@ button:hover{
     color: hsl(223, 47%, 23%);
     text-align: center;
     text-decoration: none;
+    padding-top: 20px;
 }
 
 .attribution a{
@@ -117,12 +128,6 @@ button:hover{
 }
 
 .attribution a:hover{
-    color:rgb(0, 190, 253);
+    color: rgb(0, 190, 253);
     text-decoration: none;
-}
-
-@media (max-width: 768px){
-    body{
-        overflow: visible;
-    }
 }
