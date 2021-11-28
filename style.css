@@ -61,7 +61,12 @@ p{
     color:hsla(0, 0%, 100%, 0.75);
     font-size: 13px;
     font-weight: 400;
-    justify-content: flex-start;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5; /* number of lines to show */
+           line-clamp: 5; 
+   -webkit-box-orient: vertical;
 }
 
 #card1{
