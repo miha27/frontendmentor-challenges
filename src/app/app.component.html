@@ -1,0 +1,27 @@
+<html>
+<body>
+<div class="container-fluid d-flex align-items-center justify-content-center" id="advice-container">
+  <div class="row">
+    <div class="col-sm-12">
+      <p id="advice">ADVICE #{{adviceSlip.slip.id}} </p>
+      <p id="quote">"{{adviceSlip.slip.advice}}" </p>
+    </div>
+  </div>
+  <button (click)="generateAdvice()">
+    <img src="../assets/images/icon-dice.svg" width="30" height="30" alt="divider">
+  </button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 d-flex align-items-center justify-content-center">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/miha27">Mihaela Badea</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
